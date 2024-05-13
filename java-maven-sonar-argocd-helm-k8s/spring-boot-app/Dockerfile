@@ -8,6 +8,6 @@ ARG artifact=target/spring-boot-web.jar
 WORKDIR /opt/app
 
 COPY ${artifact} app.jar
-ENTRYPOINT ["docker", "image", "rmi", "-f", "rudresh/cicd"]
+ENTRYPOINT ["docker", "image", "rmi", "-f", "rudresh29/rudresh/cicd"]
 # This should not be changed
 CMD ["java","-jar","app.jar"]
